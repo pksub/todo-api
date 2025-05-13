@@ -1,6 +1,6 @@
 package com.aladin.todo.controller;
 
-import com.aladin.todo.dto.JwtToken;
+import com.aladin.todo.security.JwtToken;
 import com.aladin.todo.dto.MemberDto;
 import com.aladin.todo.entity.Member;
 import com.aladin.todo.security.CustomUserDetails;

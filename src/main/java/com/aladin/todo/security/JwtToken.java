@@ -1,4 +1,4 @@
-package com.aladin.todo.dto;
+package com.aladin.todo.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

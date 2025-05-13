@@ -1,8 +1,6 @@
-package com.aladin.todo.util;
+package com.aladin.todo.security;
 
-import com.aladin.todo.dto.JwtToken;
 import com.aladin.todo.exception.BusinessException;
-import com.aladin.todo.service.CustomUserDetailsService;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
