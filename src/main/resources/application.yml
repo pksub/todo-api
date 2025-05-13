@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:todo.db
+    driver-class-name: org.sqlite.JDBC
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:/db/init_db.sql
+  jpa:
+    show-sql: true  # SQL 문 출력
+    properties:
+      hibernate:
+        format_sql: true  # SQL 문 포맷팅
+        dialect: com.aladin.todo.config.SQLiteDialect
+    logging:
+      level:
+        org.hibernate.SQL: debug  # SQL 로그 출력
+        org.hibernate.type.descriptor.sql.BasicBinder: trace  # 파라미터 로그 출력
+    hibernate:
+      ddl-auto: none
+
+jwt:
+  secret: 64461f01e1af406da538b9c48d801ce59142452199ff112fb5404c8e7e98e3ff
